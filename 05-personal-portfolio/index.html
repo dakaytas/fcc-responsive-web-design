@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio Webpage</title>
+  <style>
+    :root {
+      --primary-color: #2d3436;
+      --accent-color: #6c5ce7;
+      --bg-color: #f4f7f6;
+      --text-color: #2d3436;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      margin: 0;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      scroll-behavior: smooth;
+    }
+
+    #navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background-color: rgba(45, 52, 54, 0.95);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: flex-end;
+      padding: 1rem 2rem;
+      box-sizing: border-box;
+    }
+
+    #navbar a {
+      color: white;
+      text-decoration: none;
+      margin-left: 2rem;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    #navbar a:hover {
+      color: var(--accent-color);
+    }
+
+    /* Welcome Section */
+    #welcome-section {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
+      color: white;
+      padding: 0 20px;
+    }
+
+    #welcome-section h1 {
+      font-size: clamp(2.5rem, 8vw, 4rem);
+      margin-bottom: 0.5rem;
+    }
+
+    /* Projects Section */
+    #projects {
+      padding: 100px 20px;
+      max-width: 1200px; /* Biraz daha genişlettik */
+      margin: 0 auto;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: clamp(1.8rem, 5vw, 2.5rem);
+      margin-bottom: 50px;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-tile {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-top: 5px solid var(--accent-color);
+    }
+
+    .project-tile:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(108, 92, 231, 0.2);
+    }
+
+    .project-category {
+      font-size: 0.8rem;
+      font-weight: bold;
+      color: var(--accent-color);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .project-tile h3 {
+      margin: 10px 0;
+    }
+
+    .project-tile p {
+      color: #636e72;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .project-link {
+      font-weight: bold;
+      color: var(--accent-color);
+      text-decoration: none;
+      border: 2px solid var(--accent-color);
+      padding: 8px 20px;
+      border-radius: 25px;
+      transition: all 0.3s;
+    }
+
+    .project-link:hover {
+      background-color: var(--accent-color);
+      color: white;
+    }
+
+    /* Contact Section */
+    #contact {
+      padding: 100px 20px;
+      text-align: center;
+      background-color: var(--primary-color);
+      color: white;
+    }
+
+    #contact h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .contact-links {
+      margin-top: 30px;
+    }
+
+    #profile-link {
+      color: white;
+      font-size: 1.5rem;
+      text-decoration: none;
+      border: 1px solid white;
+      padding: 10px 25px;
+      border-radius: 5px;
+      transition: all 0.3s;
+    }
+
+    #profile-link:hover {
+      background-color: white;
+      color: var(--primary-color);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      #navbar {
+        justify-content: center;
+        padding: 1rem;
+      }
+      #navbar a {
+        margin: 0 10px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav id="navbar">
+    <a href="#welcome-section">About</a>
+    <a href="#projects">Work</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="welcome-section">
+    <h1>Welcome to my portfolio</h1>
+    <p>Web Developer</p>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">My Technical & Creative Portfolio</h2>
+    <div class="projects-grid">
+      
+      <div class="project-tile">
+        <div class="project-category">Live Business Site</div>
+        <h3>Physiotherapy Professional Site</h3>
+        <p>A fully responsive professional website designed for a healthcare clinic.</p>
+        <a href="#" target="_blank" class="project-link">View Site</a>
+      </div>
+
+      <div class="project-tile">
+        <div class="project-category">PWA / JavaScript</div>
+        <h3>Aurelin Affirmations</h3>
+        <p>A Progressive Web App focused on daily mindset and positive affirmations.</p>
+        <a href="#" target="_blank" class="project-link">View App</a>
+      </div>
+
+      <div class="project-tile">
+        <div class="project-category">FCC Project</div>
+        <h3>Survey Form</h3>
+        <p>A customized customer satisfaction form with full validation and clean UI.</p>
+        <a href="#" target="_blank" class="project-link">View Project</a>
+      </div>
+
+      <div class="project-tile">
+        <div class="project-category">FCC Project</div>
+        <h3>Tribute Page</h3>
+        <p>A responsive informational page dedicated to honoring a specific figure.</p>
+        <a href="#" target="_blank" class="project-link">View Project</a>
+      </div>
+
+      <div class="project-tile">
+        <div class="project-category">FCC Project</div>
+        <h3>Technical Documentation</h3>
+        <p>A navigational documentation layout for technical software or languages.</p>
+        <a href="#" target="_blank" class="project-link">View Project</a>
+      </div>
+
+      <div class="project-tile">
+        <div class="project-category">FCC Project</div>
+        <h3>Product Landing Page</h3>
+        <p>A marketing-focused page designed to showcase products and features.</p>
+        <a href="#" target="_blank" class="project-link">View Project</a>
+      </div>
+
+      <div class="project-tile">
+        <div class="project-category">FCC Project / Source Code</div>
+        <h3>Personal Portfolio</h3>
+        <p>The very page you are viewing, showcasing my front-end and QA journey.</p>
+        <a href="#" target="_blank" class="project-link">View Source Code</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Let's work together...</h2>
+    <p>You can find my professional works and code on GitHub.</p>
+    <div class="contact-links">
+      <a id="profile-link" href="https://github.com/dakaytas" target="_blank" rel="noopener">
+        GitHub Profile
+      </a>
+    </div>
+  </section>
+</body>
+
+</html>
