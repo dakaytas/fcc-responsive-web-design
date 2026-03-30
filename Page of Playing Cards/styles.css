@@ -1,0 +1,92 @@
+body {
+  background: radial-gradient(circle, #2ecc71 0%, #1a5e20 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-attachment: fixed;
+}
+
+#playing-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 520px;
+}
+
+.card {
+  width: 150px;
+  height: 220px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.card.black {
+  color: black;
+}
+.card.red {
+  color: red;
+}
+.card.spades {
+  color: black;
+}
+.card.clubs {
+  color: black;
+}
+.card.diamonds {
+  color: red;
+}
+
+.card .left,
+.card .right {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  width: fit-content;
+}
+
+.card .left {
+  align-self: flex-start;
+}
+
+.card .right {
+  align-self: flex-end;
+  transform: rotate(180deg);
+}
+
+.card .middle {
+  font-size: 3rem;
+  align-self: center;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  transform: translateY(-10px) scale(1.02);
+}
+
+.left {
+  align-self: flex-start;
+}
+
+.middle {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+}
+
+.right {
+  align-self: flex-end;
+  transform: rotate(180deg);
+}
