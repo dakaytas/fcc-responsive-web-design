@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="styles.css"/>
+  <title>Customer Satisfaction Survey</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 id="title">Art & Design Survey</h1>
+    <p id="description">Please share your experience so we can provide you with even better art products.
+    </p>
+    <form id="survey-form">
+      <label id="name-label" for="name">Full Name</label>
+      <input id="name" type="text" placeholder= "Enter your name" required>
+      <label id="email-label" for="email">Email Address</label>
+      <input id="email" type="email" placeholder= "Enter your email" required>
+      <label id="number-label" for="number">How many products have you purchased or used so far?</label>
+      <input id="number" type="number" min="0" max="100" placeholder="e.g. 5">
+
+      <label for="dropdown">Which product category interests you most?</label>
+      <select id="dropdown">
+      <option disabled selected value>Select an option</option>
+      <option value="wall-art">Digital Wall Art</option>
+      <option value="templates">Invitation Templates</option>
+            <option value="jewelry">Resin Jewelry</option>
+    </select>
+
+      <p>Would you recommend our designs to a friend?</p>
+      <label class="inline-label">
+    <input type="radio" name="recommend" value="definitely" checked>Definitely
+    </label>
+      <label class="inline-label">
+    <input type="radio" name="recommend" value="Maybe">Maybe
+    </label>
+      <p>What styles do you prefer? (Select all that apply)</p>
+      <label class="inline-label">
+      <input type="checkbox" value="surrealism">Surrealism
+      </label>
+      <label class="inline-label">
+      <input type="checkbox" value="minimalism">Minimalism
+      </label>
+      <label class="inline-label">
+      <input type="checkbox" value="baroque">Baroque
+      </label>
+      <p>Any additional suggestions for us?</p>
+      <textarea id="comments" placeholder="Write your thoughts here..."></textarea>
+
+      <button id="submit" type="submit">Submit</button>
+
+    </form>
+  </div>
+</body>
+
+</html>
