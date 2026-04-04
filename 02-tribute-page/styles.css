@@ -1,0 +1,67 @@
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  line-height: 1.5;
+  text-align: center;
+  color: #333;
+  margin: 0;
+  background-color: #f4f4f4; /* Arka planı hafif gri yapalım */
+}
+
+#main {
+  margin: 30px 10px;
+  padding: 15px;
+  border-radius: 5px;
+  background: white; /* İçeriği beyaz bir kutu içine alalım */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#main > p {
+  max-width: 600px;
+  margin: 15px auto;
+  text-align: center;
+}
+
+#main > p:nth-last-of-type(3) {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+#img-div {
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 800px;
+  margin: 20px auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#image {
+  border-radius: 5px;
+}
+
+#img-caption {
+  margin: 15px 0 5px 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+ul {
+  max-width: 600px;
+  margin: 0 auto 50px auto;
+  text-align: left; /* Listeyi sola yaslamak okumayı kolaylaştırır */
+  line-height: 1.6;
+}
+
+li {
+  margin: 16px 0;
+}
