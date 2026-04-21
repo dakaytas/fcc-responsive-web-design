@@ -21,8 +21,7 @@ You can view the live version of this project here:
 * **FontAwesome:** High-quality icons for visual storytelling.
 
 ## 📸 Preview
-*(Optional: Buraya projenin bir ekran görüntüsünü eklemek çok şık durur)*
-![Project Preview](https://via.placeholder.com/800x400?text=Project+Preview+Coming+Soon)
+![Project Preview](Screenshot.png)
 
 ## 🎯 Project Requirements (freeCodeCamp)
 This project fulfills all the following user stories:
