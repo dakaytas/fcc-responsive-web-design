@@ -4,7 +4,7 @@ This project is a professional product landing page created as part of the **fre
 
 ## 🚀 Live Demo
 You can view the live version of this project here: 
-**[Linkinizi Buraya Yapıştırın - Örneğin GitHub Pages Linki]**
+**[https://dakaytas.github.io/fcc-responsive-web-design/04-product-landing-page/](https://dakaytas.github.io/fcc-responsive-web-design/04-product-landing-page/)**
 
 ## ✨ Features
 * **Fully Responsive:** Optimized for desktop, tablet, and mobile screens.
